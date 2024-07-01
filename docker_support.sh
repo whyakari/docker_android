@@ -11,7 +11,6 @@ check_and_add_config() {
 
 add_docker_configs() {
     CONFIGS=(
-        "CONFIG_DOCKER=y"
         "CONFIG_PROC_PID_CPUSET=y"
         "CONFIG_NET=y"
         "CONFIG_NETDEVICES=y"
