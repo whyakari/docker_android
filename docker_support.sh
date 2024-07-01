@@ -11,6 +11,7 @@ check_and_add_config() {
 
 add_docker_configs() {
     CONFIGS=(
+        "CONFIG_DOCKER=y"
         "CONFIG_PROC_PID_CPUSET=y"
         "CONFIG_NET=y"
         "CONFIG_NETDEVICES=y"
@@ -92,6 +93,7 @@ add_docker_configs() {
         "CONFIG_NETLINK_DIAG=y"
         "CONFIG_CHECKPOINT_RESTORE=y"
         "CONFIG_NETFILTER_XT_MATCH_CGROUP=y"
+        "CONFIG_CGROUP_PERF=y"
     )
 
     for CONFIG in "${CONFIGS[@]}"; do
